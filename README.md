@@ -2,7 +2,7 @@
   <a href="README.zh-CN.md">中文</a> | <strong>English</strong>
 </p>
 
-# HJS: Structural Traceability Protocol
+# HJS: A Judgment Event Protocol
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Spec: CC0 1.0](https://img.shields.io/badge/Spec-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
@@ -325,3 +325,4 @@ This project uses a **dual-license strategy**:
 - **Health Check**: https://api.hjs.sh/health
 - **Python SDK**: https://github.com/hjs-protocol/sdk-py
 - **Node.js SDK**: https://github.com/hjs-protocol/sdk-js
+
