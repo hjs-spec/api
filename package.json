@@ -1,0 +1,40 @@
+{
+  "name": "hjs-api",
+  "version": "1.0.0",
+  "description": "Reference implementation API for HJS: A Judgment Event Protocol",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=development node index.js",
+    "test": "cd test-client && node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjs-protocol/api.git"
+  },
+  "keywords": [
+    "hjs",
+    "judgment-event",
+    "ietf-draft",
+    "ai-accountability",
+    "traceability"
+  ],
+  "author": "Human Judgment Systems Foundation Ltd.",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hjs-protocol/api/issues"
+  },
+  "homepage": "https://github.com/hjs-protocol/api#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "multer": "^2.0.2",
+    "node-cron": "^4.2.1",
+    "pdfkit": "^0.17.2",
+    "pg": "^8.18.0",
+    "qrcode": "^1.5.4"
+  }
+}
