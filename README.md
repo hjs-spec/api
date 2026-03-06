@@ -28,9 +28,9 @@ This API service is one of several HJS implementations. The core protocol is als
 
 ---
 
-## 📜 IETF Participation
+## 📜  Participation
 
-This project is related to the IETF Internet-Draft [draft-wang-hjs-judgment-event](https://datatracker.ietf.org/doc/draft-wang-hjs-judgment-event/). Contributions to this repository (issues, pull requests, etc.) are considered part of the IETF standards process and are subject to the [IETF Note Well](https://www.ietf.org/about/note-well/).
+This project is related to the IETF Internet-Draft [draft-wang-hjs-judgment-event](https://datatracker.ietf.org/doc/draft-wang-hjs-judgment-event/).
 
 ---
 
