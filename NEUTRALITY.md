@@ -1,14 +1,14 @@
-# HJS Protocol Boundaries Declaration
+# JEP Protocol Boundaries Declaration
 
 **Version 1.0 | February 18, 2026**
 
-This document elaborates on the design principles and boundaries defined in the IETF Internet-Draft [draft-wang-hjs-judgment-event](https://datatracker.ietf.org/doc/draft-wang-hjs-judgment-event/). HJS is a **structural layer infrastructure** for recording AI decisions, not a system for determining responsibility.
+This document elaborates on the design principles and boundaries defined in the IETF Internet-Draft [draft-wang-hjs-judgment-event](https://datatracker.ietf.org/doc/draft-wang-hjs-judgment-event/). JEP is a **structural layer infrastructure** for recording AI decisions, not a system for determining responsibility.
 
 ## I. Core Positioning
 
-> **HJS records structure. It does not judge outcomes.**
+> **JEP records structure. It does not judge outcomes.**
 
-The HJS protocol does one thing: **records structured traceable events**. It does not define, determine, or guarantee any external responsibility.
+The JEP protocol does one thing: **records structured traceable events**. It does not define, determine, or guarantee any external responsibility.
 
 ## II. What We Do NOT Do
 
