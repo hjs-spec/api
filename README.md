@@ -149,17 +149,6 @@ This project uses a **dual-license strategy**:
 
 ---
 
-## 🔗 Links
-
-- **Protocol Specification**: https://github.com/hjs-spec
-- **Core Rust Implementation**: https://github.com/hjs-spec/hjs-core
-- **API Documentation**: https://api.hjs.sh/api/docs
-- **Health Check**: https://api.hjs.sh/health
-- **Python SDK**: https://github.com/hjs-protocol/sdk-py
-- **Node.js SDK**: https://github.com/hjs-protocol/sdk-js
-
----
-
 ## 📬 Contact & Community
 
 - **Email**: `signal@humanjudgment.org`
