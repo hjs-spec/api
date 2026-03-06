@@ -163,9 +163,7 @@ This project uses a **dual-license strategy**:
 ## 📬 Contact & Community
 
 - **Email**: `signal@humanjudgment.org`
-- **GitHub Issues**: For bug reports and feature requests
-- **IETF Mailing List**: SCITT WG (for protocol-level discussions)
 
 ---
 
-**© 2026 Human Judgment Systems Foundation Ltd.**
+**© 2026 HJS Foundation Ltd.**
