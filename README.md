@@ -97,7 +97,7 @@ assert!(receipt.verify(VerificationMode::Strict)?);
 
 ### 1. Get an API Key
 
-For testing and evaluation, please [open an issue](https://www.google.com/search?q=https://github.com/jep-protocol/api/issues) or contact the foundation at `signal@jep-protocol.org` to request a developer API key.
+For testing and evaluation, contact the foundation at `signal@humanjudgment.org` to request a developer API key.
 
 ### 2. Use the SDK (Recommended)
 
