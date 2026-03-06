@@ -34,15 +34,6 @@ This project is related to the IETF Internet-Draft [draft-wang-hjs-judgment-even
 
 ---
 
-## 📦 Implementations & SDKs
-
-| Type | Language | Repository |
-|------|----------|------------|
-| **Core Protocol** | Rust | [`hjs-core`](https://github.com/hjs-protocol/core) |
-| **Python SDK** | Python | [`sdk-py`](https://github.com/hjs-protocol/sdk-py) |
-| **Node.js SDK** | JavaScript | [`sdk-js`](https://github.com/hjs-protocol/sdk-js) |
-| **API Service** | - | [`api`](https://github.com/hjs-protocol/api) (this repo) |
-
 ### Python SDK
 ```bash
 pip install hjs-client
