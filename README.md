@@ -25,7 +25,7 @@ This API service is the primary gateway for JEP integration. The core protocol i
 
 ## 📜 Participation
 
-This project is actively aligned with the IETF Internet-Draft **[draft-wang-jep-judgment-event](https://www.google.com/search?q=https://datatracker.ietf.org/doc/draft-wang-jep-judgment-event/)**.
+This project is actively aligned with the IETF Internet-Draft **[draft-wang-hjs-judgment-event](https://datatracker.ietf.org/doc/draft-wang-hjs-judgment-event/)**.
 
 ---
 
