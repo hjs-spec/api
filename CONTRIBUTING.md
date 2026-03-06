@@ -1,6 +1,6 @@
 # Contributing Guide
 
-Thank you for your interest in contributing to the HJS project! We welcome all forms of contributions, including but not limited to:
+Thank you for your interest in contributing to the JEP project! We welcome all forms of contributions, including but not limited to:
 
 - Bug reports
 - Feature suggestions
@@ -243,8 +243,8 @@ Contributors will be recognized in:
 
 ## Thank You!
 
-Your contributions help make HJS better for everyone. We appreciate your time and effort!
+Your contributions help make JEP better for everyone. We appreciate your time and effort!
 
 ---
 
-**© 2026 Human Judgment Systems Foundation Ltd.**
+**© 2026 HJS Foundation Ltd.**
