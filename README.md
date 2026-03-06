@@ -9,8 +9,6 @@
 
 **Reference implementation API service** for recording structured events, based on the HJS protocol family.
 
-**Public instance**: `https://api.hjs.sh` (for testing and evaluation)
-
 ---
 
 ## 📖 About
