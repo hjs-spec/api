@@ -55,5 +55,5 @@ For technical issues, use [GitHub Issues](https://github.com/hjs-protocol/api/is
 
 ---
 
-**© 2026 Human Judgment Systems Foundation Ltd.**  
+**© 2026 HJS Ltd.**  
 This document is licensed under the [MIT License](https://opensource.org/licenses/MIT).
