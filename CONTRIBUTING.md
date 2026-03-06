@@ -49,7 +49,7 @@ This project and everyone participating in it is governed by our [Code of Conduc
 
 ### Before Submitting a Bug Report
 
-- Check the [Issues](https://github.com/hjs-protocol/[REPO-NAME]/issues) to see if the problem has already been reported
+- Check the [Issues](https://github.com/jep-protocol/[REPO-NAME]/issues) to see if the problem has already been reported
 - Ensure you're running the latest version
 - Try to isolate the problem
 
