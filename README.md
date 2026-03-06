@@ -1,90 +1,96 @@
+---
+
 <p align="center">
-  <a href="README.zh-CN.md">中文</a> | <strong>English</strong>
+<a href="README.zh-CN.md">中文</a> | <strong>English</strong>
 </p>
 
-# HJS: A Judgment Event Protocol
+# JEP: Judgment Event Protocol
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Spec: CC0 1.0](https://img.shields.io/badge/Spec-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-**Reference implementation API service** for recording structured events, based on the HJS protocol family.
+**Reference implementation API service** for recording structured events, based on the JEP protocol family.
 
 ---
 
 ## 📖 About
 
-This project is a reference implementation of the [HJS Protocol Family](https://github.com/hjs-protocol/spec). It implements the **4 core primitives** from the HJS protocol:
+This project is the reference implementation of the **[JEP Protocol Family](https://www.google.com/search?q=https://github.com/jep-protocol/spec)**. It implements the **4 core primitives** essential for AI accountability:
 
-1. **Judgment** — Record structured decisions
-2. **Delegation** — Transfer authority with scope and expiry
-3. **Termination** — End responsibility chains
-4. **Verification** — Validate record integrity and chains
+1. **Judgment** — Record structured, cryptographically signed decisions.
+2. **Delegation** — Transfer authority with granular scope and automatic expiry.
+3. **Termination** — Formally end responsibility chains for audit finality.
+4. **Verification** — Validate record integrity and cryptographic chains via Ed25519.
 
-This API service is one of several HJS implementations. The core protocol is also available as a [Rust library](https://github.com/hjs-protocol/core) for direct integration.
+This API service is the primary gateway for JEP integration. The core protocol is also available as a **[Rust library](https://www.google.com/url?sa=E&source=gmail&q=https://github.com/jep-protocol/core)** for high-performance, direct integration.
 
-> **Protocol Boundary**: HJS defines structural traceability primitives. It does not determine legal or ethical responsibility. All responsibility determinations must be made by external systems or legal procedures.
+> **Protocol Boundary**: JEP defines structural traceability primitives for digital systems. It does not determine legal or ethical responsibility. All final responsibility determinations must be made by human-in-the-loop systems or formal legal procedures.
 
 ---
 
-## 📜  Participation
+## 📜 Participation
 
-This project is related to the IETF Internet-Draft [draft-wang-hjs-judgment-event](https://datatracker.ietf.org/doc/draft-wang-hjs-judgment-event/).
+This project is actively aligned with the IETF Internet-Draft **[draft-wang-jep-judgment-event](https://www.google.com/search?q=https://datatracker.ietf.org/doc/draft-wang-jep-judgment-event/)**.
 
 ---
 
 ### Python SDK
+
 ```bash
-pip install hjs-client
+pip install jep-client
+
 ```
 
 ```python
-from hjs import HJSClient
+from jep import JEPClient
 
-# Record a judgment
-client = HJSClient(api_key="your_key")
+# Record a judgment with JEP standard
+client = JEPClient(api_key="your_key")
 result = client.judgment(
     entity="user@example.com",
     action="approve",
     scope={"amount": 1000}
 )
-print(result['id'])  # jgd_1234567890abcd
+print(result['id'])  # jep_1234567890abcd
+
 ```
 
 ### Node.js SDK
+
 ```bash
-npm install hjs-client
+npm install jep-client
+
 ```
 
 ```javascript
-const HJSClient = require('hjs-client');
+const JEPClient = require('jep-client');
 
-const client = new HJSClient({ apiKey: 'your_key' });
+const client = new JEPClient({ apiKey: 'your_key' });
 
-// Record a judgment
+// Record a JEP-compliant judgment
 const result = await client.judgment({
   entity: 'user@example.com',
   action: 'approve',
   scope: { amount: 1000 }
 });
 
-console.log(result.id);  // jgd_1234567890abcd
+console.log(result.id);  // jep_1234567890abcd
+
 ```
 
-### Rust Core (Direct Integration)
-If you prefer to integrate HJS directly into your Rust application:
+### Rust Core (High-Performance Integration)
 
 ```toml
 [dependencies]
-hjs-core = { git = "https://github.com/hjs-protocol/core" }
+jep-core = { git = "https://github.com/jep-protocol/core" }
+
 ```
 
 ```rust
-use hjs_core::{JudgmentEvent, VerificationMode};
+use jep_core::{JudgmentEvent, VerificationMode};
 
 let event = JudgmentEvent::new("user@example.com", "approve")
     .with_scope(json!({"amount": 1000}));
 let receipt = event.sign()?;
 assert!(receipt.verify(VerificationMode::Strict)?);
+
 ```
 
 ---
@@ -93,54 +99,42 @@ assert!(receipt.verify(VerificationMode::Strict)?);
 
 ### 1. Get an API Key
 
-For testing and evaluation, please [open an issue](https://github.com/hjs-protocol/api/issues) or contact us at `signal@humanjudgment.org` to request an API key.
+For testing and evaluation, please [open an issue](https://www.google.com/search?q=https://github.com/jep-protocol/api/issues) or contact the foundation at `signal@jep-protocol.org` to request a developer API key.
 
 ### 2. Use the SDK (Recommended)
 
-```bash
-# Python
-pip install hjs-client
-
-# Node.js
-npm install hjs-client
-```
+JEP provides official SDKs for Python, Node.js, and Rust to ensure cryptographic consistency across environments.
 
 ### 3. Or use HTTP API directly
 
 ```bash
-# Record a judgment
-curl -X POST https://api.hjs.sh/judgments \
+# Record a judgment via JEP REST API
+curl -X POST https://api.jep-protocol.org/judgments \
   -H "Content-Type: application/json" \
   -H "X-API-Key: your-api-key" \
   -d '{"entity": "alice@bank.com", "action": "loan_approved", "scope": {"amount": 100000}}'
+
 ```
 
 ---
 
 ## 🏗️ The 4 Core Primitives
 
-[API 示例部分保持原样，非常清晰，无需修改]
-
----
-
-## 📚 API Reference
-
-[API 参考部分保持原样，非常清晰，无需修改]
+JEP simplifies accountability into four atomic operations that map directly to the requirements of the **EU AI Act**.
 
 ---
 
 ## 📄 License
 
-This project uses a **dual-license strategy**:
-
-- **Protocol Specification** (in `/spec`): **CC0 1.0 Universal** (public domain)
-- **Reference Implementation & SDKs**: **MIT License**
+* **Protocol Specification**: **CC0 1.0 Universal** (Public Domain)
+* **Reference Implementation & SDKs**: **MIT License**
 
 ---
 
 ## 📬 Contact & Community
 
-- **Email**: `signal@humanjudgment.org`
+* **Email**: `signal@humanjudgment.org`
+* **Foundation**: HJS Foundation Ltd. (Singapore)
 
 ---
 
